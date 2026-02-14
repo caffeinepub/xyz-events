@@ -1,7 +1,7 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-14T18:48:46.033Z",
+  "generatedAt": "2026-02-14T19:34:40.072Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
@@ -11,14 +11,14 @@
     "implemented": 1,
     "items": [
       {
-        "id": "REQ-14",
-        "summary": "Update ONLY the 13 user-selected elements within the Services section (section[2] service cards) so the white box/background fill is approximately 20% opacity (i.e., Tailwind equivalent `bg-white/20`), increasing from the current ~5% opacity. Apply this change only to the elements identified by these XPaths and do not change any other elements or sections:\n1) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[1]/div[3]/div[2]/div[1]\n2) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]\n3) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/div[3]/div[2]/div[1]\n4) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/div[3]/div[1]/div[2]\n5) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[3]/div[3]/div[2]/div[1]\n6) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[3]/div[3]/div[1]/div[2]\n7) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[4]/div[3]/div[2]/div[1]\n8) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[4]/div[3]/div[1]/div[2]\n9) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[5]/div[3]/div[2]/div[1]\n10) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[5]/div[3]/div[1]\n11) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[5]/div[3]/div[1]/div[2]\n12) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[6]/div[3]/div[2]/div[1]\n13) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[6]/div[3]/div[1]/div[2]",
+        "id": "REQ-1",
+        "summary": "Publish (promote) Draft Version 10 as the live/production version of the app, with no code changes, so the publicly shareable live link serves Version 10.",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/components/marketing/ServicesSection.tsx"
+          "frontend/DEPLOYMENT_CHECKLIST_V10.md"
         ],
         "matchedFiles": [
-          "frontend/src/components/marketing/ServicesSection.tsx"
+          "frontend/DEPLOYMENT_CHECKLIST_V10.md"
         ]
       }
     ]
@@ -28,7 +28,7 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/src/components/marketing/ServicesSection.tsx",
+    "frontend/DEPLOYMENT_CHECKLIST_V10.md",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

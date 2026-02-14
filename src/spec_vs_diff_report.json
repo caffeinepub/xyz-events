@@ -1,40 +1,41 @@
 {
   "kind": "spec_vs_diff_report",
   "version": "1.0",
-  "generatedAt": "2026-02-14T18:48:46.031Z",
-  "summary": "REQ-14 was partially addressed by adding `bg-white/20` styling in ServicesSection, but the diff shows the change applied broadly across the service card component (and includes an overlay/gradient change), rather than being constrained to ONLY the 13 specified DOM elements and not touching the full-card overlay.",
+  "generatedAt": "2026-02-14T19:34:40.070Z",
+  "summary": "The diff does not perform (or evidence) an actual promotion of Draft Version 10 to production; it only adds deployment documentation and updates metadata/state tracking files. This likely fails REQ-1’s core acceptance criteria about the live link serving Version 10.",
   "missing_requirements": [
     {
-      "id": "REQ-14",
-      "requirement": "Update ONLY the 13 user-selected elements within the Services section (section[2] service cards) so the white box/background fill is ~20% opacity (e.g., `bg-white/20`), and do not modify any other elements in the Services section (including the full-card gradient overlay).",
-      "reason": "The diff shows `bg-white/20` applied at component-level locations (e.g., CardHeader, icon container, CardTitle, CardContent) that will affect every rendered card instance, not a discrete set of exactly 13 targeted elements. Additionally, the full-card overlay gradient appears modified, which violates the constraint to not change other Services elements.",
+      "id": "REQ-1",
+      "requirement": "Publish (promote) Draft Version 10 as the live/production version of the app so the publicly shareable live link serves Version 10.",
+      "reason": "No deployment/publish configuration or release artifact change is shown. The diff only adds a checklist and updates summary/state files, which do not demonstrate that production now points to Draft Version 10 or that the live link serves Version 10.",
       "evidence": [
-        "frontend/src/components/marketing/ServicesSection.tsx",
+        "frontend/DEPLOYMENT_CHECKLIST_V10.md",
+        "project_state.json",
         "frontend-file-summaries.txt"
       ]
     }
   ],
   "hallucinated_features": [
     {
-      "description": "Modified the full-card overlay/gradient for readability (changed gradient opacity stops / 'Strong overlay for readability').",
-      "reason": "REQ-14 explicitly states no other elements in the Services section (including the full-card gradient overlay) should be modified; the diff indicates an overlay gradient adjustment.",
+      "description": "Added a Deployment Checklist document for Version 10 with detailed pre/post-deployment verification, rollback plan, and success criteria.",
+      "reason": "REQ-1 is deployment-only and requests publishing Draft Version 10 with no code changes; it does not request adding new documentation files.",
       "evidence": [
-        "frontend/src/components/marketing/ServicesSection.tsx"
+        "frontend/DEPLOYMENT_CHECKLIST_V10.md"
       ]
     },
     {
-      "description": "Applied `bg-white/20` to additional elements beyond the 13 specified nodes (e.g., CardHeader, icon container, CardTitle, CardContent, and possibly CardDescription) across all service cards.",
-      "reason": "REQ-14 restricts the opacity change to exactly the 13 XPath-targeted elements only; the implementation applies `bg-white/20` to component elements inside a `.map()` over all services, which implies broader coverage than the 13 specified DOM elements.",
+      "description": "Updated project tracking/metadata files to describe the request as a pending feature request.",
+      "reason": "Not requested by REQ-1; these changes do not contribute to actually promoting Draft Version 10 to production.",
       "evidence": [
-        "frontend/src/components/marketing/ServicesSection.tsx",
+        "project_state.json",
         "frontend-file-summaries.txt"
       ]
     }
   ],
-  "confidence": 0.74,
+  "confidence": 0.72,
   "changed_files": [
     "frontend-file-summaries.txt",
-    "frontend/src/components/marketing/ServicesSection.tsx",
+    "frontend/DEPLOYMENT_CHECKLIST_V10.md",
     "project_state.json"
   ]
 }

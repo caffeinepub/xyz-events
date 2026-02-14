@@ -70,16 +70,16 @@ export function ServicesSection() {
                 
                 {/* Content */}
                 <div className="relative z-10">
-                  <CardHeader className="bg-white/20">
+                  <CardHeader>
                     <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 backdrop-blur-sm bg-white/20">
                       <Icon className="w-6 h-6 text-primary" />
                     </div>
-                    <CardTitle className="text-xl font-bold text-foreground services-text-shadow bg-white/20">
+                    <CardTitle className="text-xl font-bold text-foreground services-text-shadow bg-white/20 px-3 py-2 rounded-md">
                       {service.title}
                     </CardTitle>
                   </CardHeader>
-                  <CardContent className="bg-white/20">
-                    <CardDescription className="text-base leading-relaxed font-medium text-foreground/90 services-text-shadow bg-white/20">
+                  <CardContent>
+                    <CardDescription className="text-base leading-relaxed font-medium text-foreground/90 services-text-shadow bg-white/20 px-3 py-2 rounded-md">
                       {service.description}
                     </CardDescription>
                   </CardContent>

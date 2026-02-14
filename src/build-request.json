@@ -1,37 +1,35 @@
 {
   "kind": "build_request",
-  "title": "Increase Services card box transparency to ~20% for selected elements",
+  "title": "Publish Draft Version 10",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-14",
-      "text": "Update ONLY the 13 user-selected elements within the Services section (section[2] service cards) so the white box/background fill is approximately 20% opacity (i.e., Tailwind equivalent `bg-white/20`), increasing from the current ~5% opacity. Apply this change only to the elements identified by these XPaths and do not change any other elements or sections:\n1) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[1]/div[3]/div[2]/div[1]\n2) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]\n3) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/div[3]/div[2]/div[1]\n4) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/div[3]/div[1]/div[2]\n5) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[3]/div[3]/div[2]/div[1]\n6) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[3]/div[3]/div[1]/div[2]\n7) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[4]/div[3]/div[2]/div[1]\n8) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[4]/div[3]/div[1]/div[2]\n9) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[5]/div[3]/div[2]/div[1]\n10) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[5]/div[3]/div[1]\n11) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[5]/div[3]/div[1]/div[2]\n12) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[6]/div[3]/div[2]/div[1]\n13) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[6]/div[3]/div[1]/div[2]",
-      "target": "frontend",
+      "id": "REQ-1",
+      "text": "Publish (promote) Draft Version 10 as the live/production version of the app, with no code changes, so the publicly shareable live link serves Version 10.",
+      "target": "unknown",
       "source": {
         "messageIds": [
-          "recent-messages"
+          "msg-1"
         ],
         "quotes": [
-          "make the boxes more of maybe a 20% transparency"
+          "publish version 10"
         ]
       },
       "acceptanceCriteria": [
-        "Only the 13 specified elements have their white overlay/background opacity changed to ~20% (e.g., Tailwind `bg-white/20`).",
-        "No other elements in the Services section (including the full-card gradient overlay) are modified.",
-        "No other sections/pages/components are visually or structurally changed.",
-        "Service-card text readability improves due to the stronger (less transparent) white box fill on the selected elements."
+        "The live/production deployment points to Draft Version 10.",
+        "No frontend or backend source files are changed as part of this request.",
+        "After publishing, opening the public live link shows the Version 10 build (matching the Draft Version 10 preview)."
       ]
     }
   ],
   "constraints": [
-    "Apply the transparency/opacity change ONLY to the 13 elements specified by the provided XPath list.",
-    "Do not modify any other elements in the Services section outside the selected elements.",
-    "Do not edit files under the immutable frontend paths listed in SYSTEM_CONTEXT (not needed for this change)."
+    "Do not modify application code or assets; this request is deployment-only.",
+    "User-facing text in any deployment/publish confirmation (if shown) must be in English."
   ],
   "nonGoals": [
-    "Do not change service background images, icon choices, or service copy.",
-    "Do not alter the overall layout/responsiveness of the Services grid.",
-    "Do not change global theme tokens or typography outside the selected elements."
+    "Implementing new features or fixes.",
+    "Changing UI/UX, content, or styling.",
+    "Backend changes or data migrations."
   ],
   "imageRequirements": {
     "required": [],

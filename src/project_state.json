@@ -1,145 +1,22 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 13,
-  "summary": "Create a marketing website for XYZ Events, a nationwide (50 states) event production labor provider with 15+ years of experience supporting large hotels and event venues, offering audio, event production, LED walls, projection, video recording, engineering/switching, and conference general sessions with breakout rooms.",
-  "architectural_notes": [
-    "Services section: increase selected service card/box overlay fill to white at ~20% opacity (instead of ~5%) to improve text readability."
-  ],
-  "known_issues": [
-    "Service category text labels on the Services cards (e.g., Audio, LED Wall, etc.) are still very hard to read over the photos; increase overlay strength and/or adjust text styling (size/weight/shadow) to improve readability.",
-    "Services cards overlay opacity is still too low for readability; increase the white overlay to ~20% transparency/opacity to improve text contrast over photos."
-  ],
-  "isFixRequest": true,
+  "projectStateVersion": 3,
+  "summary": "New project",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
   "existing_features": [
     {
-      "id": "feature-create-a-responsive-marketing-homepage-for-xyz-events-that-clearly-communicates-the-company-is-an-event-production-labor-provider-operating-throughout-all-50-u-s-states-with-15-years-of-experience-supporting-large-hotel-and-event-venues",
-      "title": "Create a responsive marketing homepage for “XYZ Events” that clearly communicates the company is an event production labor provider operating throughout all 50 U.S. states with 15+ years of experience supporting large hotel and event venues.",
+      "id": "feature-publish-promote-draft-version-10-as-the-live-production-version-of-the-app-with-no-code-changes-so-the-publicly-shareable-live-link-serves-version-10",
+      "title": "Publish (promote) Draft Version 10 as the live/production version of the app, with no code changes, so the publicly shareable live link serves Version 10.",
       "reqIds": [
         "REQ-1"
       ],
       "version": 1
-    },
-    {
-      "id": "feature-add-a-services-section-that-lists-the-offered-event-production-labor-capabilities-audio-event-production-led-walls-projection-video-recording-engineering-and-switching-and-support-for-large-conferences-with-general-sessions-and-multiple-breakout-rooms",
-      "title": "Add a services section that lists the offered event production labor capabilities: audio, event production, LED walls, projection, video recording, engineering and switching, and support for large conferences with general sessions and multiple breakout rooms.",
-      "reqIds": [
-        "REQ-2"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-add-a-nationwide-coverage-and-venues-section-emphasizing-support-across-all-50-u-s-states-and-experience-working-in-large-hotel-and-event-venues",
-      "title": "Add a nationwide coverage and venues section emphasizing support across all 50 U.S. states and experience working in large hotel and event venues.",
-      "reqIds": [
-        "REQ-3"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-add-a-contact-section-suitable-for-a-marketing-website-without-requiring-backend-persistence-include-a-simple-contact-form-ui-that-uses-a-mailto-link-fallback-or-displays-contact-details-so-users-can-reach-the-company",
-      "title": "Add a contact section suitable for a marketing website without requiring backend persistence: include a simple contact form UI that uses a mailto link fallback (or displays contact details) so users can reach the company.",
-      "reqIds": [
-        "REQ-4"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-implement-a-coherent-visual-theme-for-the-site-colors-typography-spacing-and-component-styling-that-fits-an-event-production-labor-brand-and-apply-it-consistently-across-all-sections-do-not-use-a-blue-purple-theme",
-      "title": "Implement a coherent visual theme for the site (colors, typography, spacing, and component styling) that fits an event-production labor brand and apply it consistently across all sections; do not use a blue/purple theme.",
-      "reqIds": [
-        "REQ-5"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-add-basic-seo-and-share-metadata-for-the-marketing-page-document-title-and-description-referencing-xyz-events-and-nationwide-event-production-labor-services",
-      "title": "Add basic SEO and share metadata for the marketing page (document title and description) referencing XYZ Events and nationwide event production labor services.",
-      "reqIds": [
-        "REQ-6"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-include-generated-static-image-assets-in-the-frontend-and-use-them-in-the-hero-sections-store-them-under-frontend-public-assets-generated-and-reference-them-directly-from-the-ui",
-      "title": "Include generated static image assets in the frontend and use them in the hero/sections; store them under frontend/public/assets/generated and reference them directly from the UI.",
-      "reqIds": [
-        "REQ-7"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-generate-and-add-one-category-specific-background-image-for-each-of-the-six-service-categories-audio-production-event-production-led-wall-projection-video-recording-engineering-switching-conference-support-as-static-assets-under-frontend-public-assets-generated",
-      "title": "Generate and add one category-specific background image for each of the six service categories (Audio Production, Event Production, LED Wall & Projection, Video Recording, Engineering & Switching, Conference Support) as static assets under frontend/public/assets/generated.",
-      "reqIds": [
-        "REQ-8"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-update-the-services-section-ui-to-display-a-category-specific-background-for-each-service-card-or-equivalent-per-service-ui-element-ensuring-text-icon-readability-via-an-overlay-e-g-gradient-blur-tint-and-maintaining-responsive-layout",
-      "title": "Update the Services section UI to display a category-specific background for each service card (or equivalent per-service UI element), ensuring text/icon readability via an overlay (e.g., gradient/blur/tint) and maintaining responsive layout.",
-      "reqIds": [
-        "REQ-9"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-update-the-selected-services-card-text-overlay-element-xpath-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-1-div-3-div-2-div-1-so-it-is-less-transparent-and-the-text-is-easier-to-read-against-the-service-background-image-implement-this-by-increasing-the-opacity-strength-of-the-overlay-gradient-used-for-readability-in-the-services-section-cards-without-changing-other-sections",
-      "title": "Update the selected Services card text-overlay element (XPath: /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[1]/div[3]/div[2]/div[1]) so it is less transparent and the text is easier to read against the service background image. Implement this by increasing the opacity/strength of the overlay gradient used for readability in the Services section cards, without changing other sections.",
-      "reqIds": [
-        "REQ-10"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-update-the-services-section-service-card-overlay-treatment-so-the-category-titles-and-descriptions-e-g-audio-production-led-wall-projection-etc-are-clearly-readable-over-the-background-photos-on-all-cards",
-      "title": "Update the Services section service-card overlay treatment so the category titles and descriptions (e.g., “Audio Production”, “LED Wall & Projection”, etc.) are clearly readable over the background photos on all cards.",
-      "reqIds": [
-        "REQ-11"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-adjust-services-card-typography-styling-to-further-increase-contrast-and-legibility-over-imagery-e-g-stronger-font-weight-size-and-or-text-shadow-outline-and-or-placing-the-title-description-on-a-higher-contrast-scrim-while-keeping-the-existing-layout-responsive",
-      "title": "Adjust Services card typography styling to further increase contrast and legibility over imagery (e.g., stronger font weight/size and/or text shadow/outline and/or placing the title/description on a higher-contrast scrim), while keeping the existing layout responsive.",
-      "reqIds": [
-        "REQ-12"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-update-only-the-12-selected-elements-in-the-services-section-section-2-service-cards-to-use-a-white-background-fill-with-5-opacity-i-e-0-05-alpha-tailwind-equivalent-like-bg-white-5-to-improve-text-readability-without-changing-any-other-elements-on-the-page",
-      "title": "Update ONLY the 12 selected elements in the Services section (section[2] service cards) to use a white background fill with 5% opacity (i.e., 0.05 alpha / Tailwind equivalent like bg-white/5) to improve text readability, without changing any other elements on the page.",
-      "reqIds": [
-        "REQ-13"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-update-only-the-13-user-selected-elements-within-the-services-section-section-2-service-cards-so-the-white-box-background-fill-is-approximately-20-opacity-i-e-tailwind-equivalent-bg-white-20-increasing-from-the-current-5-opacity-apply-this-change-only-to-the-elements-identified-by-these-xpaths-and-do-not-change-any-other-elements-or-sections-1-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-1-div-3-div-2-div-1-2-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-1-div-3-div-1-div-2-3-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-2-div-3-div-2-div-1-4-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-2-div-3-div-1-div-2-5-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-3-div-3-div-2-div-1-6-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-3-div-3-div-1-div-2-7-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-4-div-3-div-2-div-1-8-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-4-div-3-div-1-div-2-9-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-5-div-3-div-2-div-1-10-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-5-div-3-div-1-11-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-5-div-3-div-1-div-2-12-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-6-div-3-div-2-div-1-13-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-6-div-3-div-1-div-2",
-      "title": "Update ONLY the 13 user-selected elements within the Services section (section[2] service cards) so the white box/background fill is approximately 20% opacity (i.e., Tailwind equivalent `bg-white/20`), increasing from the current ~5% opacity. Apply this change only to the elements identified by these XPaths and do not change any other elements or sections:\n1) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[1]/div[3]/div[2]/div[1]\n2) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]\n3) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/div[3]/div[2]/div[1]\n4) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/div[3]/div[1]/div[2]\n5) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[3]/div[3]/div[2]/div[1]\n6) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[3]/div[3]/div[1]/div[2]\n7) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[4]/div[3]/div[2]/div[1]\n8) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[4]/div[3]/div[1]/div[2]\n9) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[5]/div[3]/div[2]/div[1]\n10) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[5]/div[3]/div[1]\n11) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[5]/div[3]/div[1]/div[2]\n12) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[6]/div[3]/div[2]/div[1]\n13) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[6]/div[3]/div[1]/div[2]",
-      "reqIds": [
-        "REQ-14"
-      ],
-      "version": 1
     }
   ],
-  "new_feature_requests": [
-    {
-      "id": "AR-1",
-      "summary": "Build a marketing website for XYZ Events highlighting nationwide event production labor services and experience",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-2",
-      "summary": "Add additional category-specific background images (one per service/category section) to better match each offering",
-      "reqIds": [],
-      "status": "pending"
-    }
-  ],
-  "gameProjectType": "none",
-  "projectName": "XYZ Events",
+  "new_feature_requests": [],
+  "projectName": "Publish Draft Version 10",
   "clarification_mode": "instant",
   "clarification_rounds": 0
 }
