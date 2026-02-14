@@ -1,0 +1,13 @@
+{
+  "frontend/src/App.tsx": "Main application component that composes the marketing page sections (hero, services, coverage, contact) with navigation and footer.",
+  "frontend/src/components/marketing/TopNav.tsx": "Fixed navigation header with smooth scrolling to sections, mobile menu support, and scroll-based styling changes.",
+  "frontend/src/components/marketing/HeroSection.tsx": "Hero section with background image, company name, value proposition highlighting 15+ years and nationwide coverage, and CTA buttons.",
+  "frontend/src/components/marketing/ServicesSection.tsx": "Services grid displaying six event production capabilities with 20% white opacity backgrounds applied to CardHeader, icon container, CardTitle, CardContent, and CardDescription elements for improved text readability, while maintaining the existing strong overlay, text shadows, and responsive layout with hover effects.",
+  "frontend/src/components/marketing/CoverageSection.tsx": "Coverage section emphasizing all 50 states support, large venue experience, and 15+ years expertise with U.S. map visual, updated to use Tailwind CSS v3 shrink-0 utility class.",
+  "frontend/src/components/marketing/ContactSection.tsx": "Contact section with validated form using mailto submission, contact info cards, and client-side validation.",
+  "frontend/src/components/marketing/Footer.tsx": "Footer with company info, quick links, contact details, and required caffeine.ai attribution with UTM tracking.",
+  "frontend/src/index.css": "Global styles with warm amber/charcoal OKLCH color system, typography hierarchy, light/dark mode support, and new services-text-shadow utility class providing layered text shadows specifically for the Services section to ensure text readability over background images.",
+  "frontend/tailwind.config.js": "Tailwind configuration with Inter font, extended color tokens, custom shadows, and design system utilities.",
+  "frontend/index.html": "HTML entry point with SEO metadata, page title, meta description, and Inter font preload.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file as no backend queries are needed for this static marketing website."
+}

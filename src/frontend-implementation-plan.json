@@ -1,0 +1,24 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Increase Services selected card element background opacity to ~20%",
+  "requirements": [
+    {
+      "id": "REQ-14",
+      "summary": "Increase the white background fill opacity to ~20% (Tailwind `bg-white/20`) for only the 13 user-specified elements in the Services section service cards, without modifying any other elements or overlays.",
+      "acceptanceCriteria": [
+        "Only the 13 specified elements have their white overlay/background opacity changed to ~20% (e.g., Tailwind `bg-white/20`).",
+        "No other elements in the Services section (including the full-card gradient overlay) are modified.",
+        "No other sections/pages/components are visually or structurally changed.",
+        "Service-card text readability improves due to the stronger (less transparent) white box fill on the selected elements."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/marketing/ServicesSection.tsx",
+          "operation": "modify",
+          "description": "Update Tailwind classes so only the DOM nodes corresponding to the 13 provided XPaths get `bg-white/20` instead of the current ~`bg-white/5`. Implement via index-based conditional class application on the specific elements that map to those XPaths (e.g., keep Card gradient overlay and all non-target `bg-white/5` elements unchanged), ensuring no other Services section elements are altered. Verify the component's usage instructions before implementing."
+        }
+      ]
+    }
+  ]
+}

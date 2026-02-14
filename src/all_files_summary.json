@@ -1,0 +1,21 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no logic.",
+  "feature_evidence.json": "Feature report describing 13 specific XPath‑targeted opacity updates in ServicesSection.tsx.",
+  "frontend-file-summaries.txt": "Prewritten summaries of all frontend components and configuration files.",
+  "frontend/index.css": "Global Tailwind CSS base styles defining color tokens, themes, and shared utilities.",
+  "frontend/index.html": "HTML entry point loading fonts, metadata, and mounting the React app.",
+  "frontend/src/App.tsx": "Assembles the marketing site sections with nav and footer.",
+  "frontend/src/components/marketing/ContactSection.tsx": "Contact form with validation plus email, phone, and coverage info cards.",
+  "frontend/src/components/marketing/CoverageSection.tsx": "Section describing nationwide coverage, venue expertise, and experience with a map image.",
+  "frontend/src/components/marketing/Footer.tsx": "Footer with company info, quick links, contact details, and caffeine.ai attribution.",
+  "frontend/src/components/marketing/HeroSection.tsx": "Hero area with background image, company messaging, and CTA buttons that scroll to contact.",
+  "frontend/src/components/marketing/ServicesSection.tsx": "Renders a services grid with cards showing icons, descriptions, and background images. Includes hover effects and a styled section header.",
+  "frontend/src/components/marketing/TopNav.tsx": "Implements a responsive top navigation bar with scroll-based styling and smooth section scrolling. Supports a mobile dropdown menu.",
+  "frontend/src/hooks/useActor.ts": "Creates and manages a backend actor tied to Internet Identity using react-query. Recreates and invalidates queries when identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides Internet Identity authentication context with login, logout, and identity restoration logic. Wraps children in a provider using AuthClient.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file indicating no backend queries are needed.",
+  "frontend/src/index.css": "Tailwind base styles plus custom color variables, typography, and utility classes including text shadows for services.",
+  "frontend/src/main.tsx": "Application entry point setting up React, QueryClient, InternetIdentityProvider, and global CSS.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending colors, fonts, animations, and utilities using OKLCH variables and plugins.",
+  "project_state.json": "Defines the project’s current marketing website state, including features, issues, and styling notes. Highlights readability problems in the Services section and marks the update as a fix request."
+}

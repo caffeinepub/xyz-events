@@ -1,0 +1,40 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-14T18:48:46.031Z",
+  "summary": "REQ-14 was partially addressed by adding `bg-white/20` styling in ServicesSection, but the diff shows the change applied broadly across the service card component (and includes an overlay/gradient change), rather than being constrained to ONLY the 13 specified DOM elements and not touching the full-card overlay.",
+  "missing_requirements": [
+    {
+      "id": "REQ-14",
+      "requirement": "Update ONLY the 13 user-selected elements within the Services section (section[2] service cards) so the white box/background fill is ~20% opacity (e.g., `bg-white/20`), and do not modify any other elements in the Services section (including the full-card gradient overlay).",
+      "reason": "The diff shows `bg-white/20` applied at component-level locations (e.g., CardHeader, icon container, CardTitle, CardContent) that will affect every rendered card instance, not a discrete set of exactly 13 targeted elements. Additionally, the full-card overlay gradient appears modified, which violates the constraint to not change other Services elements.",
+      "evidence": [
+        "frontend/src/components/marketing/ServicesSection.tsx",
+        "frontend-file-summaries.txt"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Modified the full-card overlay/gradient for readability (changed gradient opacity stops / 'Strong overlay for readability').",
+      "reason": "REQ-14 explicitly states no other elements in the Services section (including the full-card gradient overlay) should be modified; the diff indicates an overlay gradient adjustment.",
+      "evidence": [
+        "frontend/src/components/marketing/ServicesSection.tsx"
+      ]
+    },
+    {
+      "description": "Applied `bg-white/20` to additional elements beyond the 13 specified nodes (e.g., CardHeader, icon container, CardTitle, CardContent, and possibly CardDescription) across all service cards.",
+      "reason": "REQ-14 restricts the opacity change to exactly the 13 XPath-targeted elements only; the implementation applies `bg-white/20` to component elements inside a `.map()` over all services, which implies broader coverage than the 13 specified DOM elements.",
+      "evidence": [
+        "frontend/src/components/marketing/ServicesSection.tsx",
+        "frontend-file-summaries.txt"
+      ]
+    }
+  ],
+  "confidence": 0.74,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/marketing/ServicesSection.tsx",
+    "project_state.json"
+  ]
+}

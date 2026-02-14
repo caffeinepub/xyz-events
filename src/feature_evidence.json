@@ -1,0 +1,23 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-only-the-13-user-selected-elements-within-the-services-section-section-2-service-cards-so-the-white-box-background-fill-is-approximately-20-opacity-i-e-tailwind-equivalent-bg-white-20-increasing-from-the-current-5-opacity-apply-this-change-only-to-the-elements-identified-by-these-xpaths-and-do-not-change-any-other-elements-or-sections-1-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-1-div-3-div-2-div-1-2-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-1-div-3-div-1-div-2-3-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-2-div-3-div-2-div-1-4-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-2-div-3-div-1-div-2-5-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-3-div-3-div-2-div-1-6-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-3-div-3-div-1-div-2-7-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-4-div-3-div-2-div-1-8-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-4-div-3-div-1-div-2-9-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-5-div-3-div-2-div-1-10-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-5-div-3-div-1-11-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-5-div-3-div-1-div-2-12-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-6-div-3-div-2-div-1-13-html-1-body-1-div-1-div-1-main-1-section-2-div-1-div-2-div-6-div-3-div-1-div-2",
+      "featureTitle": "Update ONLY the 13 user-selected elements within the Services section (section[2] service cards) so the white box/background fill is approximately 20% opacity (i.e., Tailwind equivalent `bg-white/20`), increasing from the current ~5% opacity. Apply this change only to the elements identified by these XPaths and do not change any other elements or sections:\n1) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[1]/div[3]/div[2]/div[1]\n2) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]\n3) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/div[3]/div[2]/div[1]\n4) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[2]/div[3]/div[1]/div[2]\n5) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[3]/div[3]/div[2]/div[1]\n6) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[3]/div[3]/div[1]/div[2]\n7) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[4]/div[3]/div[2]/div[1]\n8) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[4]/div[3]/div[1]/div[2]\n9) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[5]/div[3]/div[2]/div[1]\n10) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[5]/div[3]/div[1]\n11) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[5]/div[3]/div[1]/div[2]\n12) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[6]/div[3]/div[2]/div[1]\n13) /html[1]/body[1]/div[1]/div[1]/main[1]/section[2]/div[1]/div[2]/div[6]/div[3]/div[1]/div[2]",
+      "files": [
+        "frontend/src/components/marketing/ServicesSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
